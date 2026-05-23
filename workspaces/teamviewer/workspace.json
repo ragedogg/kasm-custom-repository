@@ -1,34 +1,29 @@
 {
+  "name": "teamviewer",
+  "friendly_name": "TeamViewer",
   "description": "KASM Desktop with TeamViewer",
+
+  "image": "ragedogg/kasm-teamviewer:latest",
   "docker_registry": "https://index.docker.io/v1/",
+
   "image_src": "teamviewer.png",
+
   "run_config": {
     "hostname": "teamviewer"
   },
-  "exec_config": {
-    "go": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
-    },
-    "assign": {
-      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
-    }
-  },
+
   "categories": [
-    "Browser"
+    "Communication"
   ],
-  "friendly_name": "TeamViewer",
+
   "architecture": [
-    "amd64",
-    "arm64"
+    "amd64"
   ],
+
   "compatibility": [
     {
       "version": "1.18.x",
-      "image": "ragedogg/kasm-teamviewer:latest",
-      "uncompressed_size_mb": 2170,
-      "available_tags": [
-        "develop"
-      ]
+      "image": "ragedogg/kasm-teamviewer:latest"
     }
   ]
 }
