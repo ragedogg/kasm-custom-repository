@@ -23,7 +23,7 @@
   "compatibility": [
     {
       "version": "1.18.x",
-      "image": "ragedogg/kasm-teamviewer:latest"
+      "image": "ubuntu:latest"
     }
   ]
 }
